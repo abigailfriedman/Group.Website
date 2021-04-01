@@ -18,6 +18,11 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+	background-image: url("images/background.1.jpg");
+	height: 100%;
+	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
 }
 
 .Site-content {
