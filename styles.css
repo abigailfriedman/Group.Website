@@ -48,7 +48,8 @@ Header Styling
 
 header{
 	background-color: #000000;
-	min-height: 8vh;
+	min-height: 6vh;
+	max-height: 9vh;
 }
 
 /************************** Hamburger menu *********************/
@@ -147,7 +148,7 @@ Tour Styling
 	color: #cbbe9b;
 	padding: 2%;
 	margin: 1.5% auto;
-	width: 60%;
+	width: 75%;
 }
 
 /*============================
@@ -175,13 +176,12 @@ footer p{
 /********************** START 500px MEDIA QUERY **************************/
 @media(min-width:600px) {
 
-	/*********************************NAVIGATION********************************/
+	/**************************NAVIGATION*****************************/
 	.desktop-nav{
 		display: block;
 		display: flex;
 		justify-content: flex-end;
 		background-color: #000000;
-		padding: .5%;
 		margin: 2% 0;
 	}
 
