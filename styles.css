@@ -36,11 +36,20 @@ yellow color: #cbbe9b;
 .Site-content {
   flex: 1;
 }
+/*============================
+
+Header Styling
+
+*=========================*/
 
 .desktop-nav{
 	display: none;
 }
 
+header{
+	background-color: #000000;
+	min-height: 8vh;
+}
 
 /************************** Hamburger menu *********************/
 .hamburger{
@@ -49,7 +58,7 @@ yellow color: #cbbe9b;
   top:0;
   right:0;
   line-height:50px;
-  padding: 1px 10px 0px 15px;
+  padding: 1px 10px 2px 15px;
   color:#cbbe9b;
   border:0;
   font-size:1.8em;
@@ -84,15 +93,7 @@ yellow color: #cbbe9b;
 .menu a:hover{text-decoration:none; color:#cbbe9b;}
 
 /***************** Hamburger menu END ********************************/
-/*============================
 
-Header Styling
-
-*=========================*/
-header{
-	background-color: #000000;
-	min-height: 7vh;
-}
 
 /*============================
 
@@ -122,26 +123,6 @@ Logo right corner Styling
   background-image: url("images/logo-mask-2.png");
   text-indent: -9999px;
 }
-/*============================
-
-Footer Styling
-
-*=========================*/
-
-footer{
-	background-color: #000000;
-}
-
-footer p{
-	font-family: 'Playfair Display', serif;
-	font-size: .8em;
-	text-transform: uppercase;
-	color: #cbbe9b;
-	width: 75%;
-	margin: 2% auto;
-	text-align: center;
-}
-
 
 /*============================
 
@@ -168,6 +149,28 @@ Tour Styling
 	margin: 1.5% auto;
 	width: 60%;
 }
+
+/*============================
+
+Footer Styling
+
+*=========================*/
+
+footer{
+	background-color: #000000;
+}
+
+footer p{
+	font-family: 'Playfair Display', serif;
+	font-size: .8em;
+	text-transform: uppercase;
+	color: #cbbe9b;
+	width: 75%;
+	margin: 2% auto;
+	text-align: center;
+}
+
+
 
 /********************** START 500px MEDIA QUERY **************************/
 @media(min-width:600px) {
