@@ -32,10 +32,15 @@ yellow color: #cbbe9b;
  	background-size: cover;
 }
 
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .Site-content {
   flex: 1;
 }
-
 
 .desktop-nav{
 	display: none;
@@ -96,6 +101,34 @@ header{
 
 /*============================
 
+Logo right corner Styling
+
+*=========================*/
+.bloc-logo {
+  position: relative;
+  width: 170px;
+  height: 50px;
+  float: left;
+}
+
+.bloc-logo canvas,
+.bloc-logo .logo-mask {
+  display: block;
+	top: 2%;
+  width: 170px;
+  height: 50px;
+}
+
+.bloc-logo .logo-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 170px;
+  background-image: url("images/logo-mask-2.png");
+  text-indent: -9999px;
+}
+/*============================
+
 Footer Styling
 
 *=========================*/
@@ -116,13 +149,13 @@ footer p{
 }
 
 /********************** START 500px MEDIA QUERY **************************/
-@media(min-width:500px) {
+@media(min-width:600px) {
 
 	/*********************************NAVIGATION********************************/
 	.desktop-nav{
 		display: block;
 		display: flex;
-		justify-content: center;
+		justify-content: flex-end;
 		background-color: #000000;
 		padding: .5%;
 		margin: 2% 0;
