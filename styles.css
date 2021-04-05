@@ -14,6 +14,13 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+/*===
+font-family: 'Playfair Display', serif;
+font-family: "futura-pt", sans-serif;
+color
+yellow color: #cbbe9b;
+==*/
+
 .Site {
   display: flex;
   min-height: 100vh;
@@ -28,8 +35,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 .Site-content {
   flex: 1;
 }
-/*===
-font-family: 'Playfair Display', serif; ==*/
+
 
 .desktop-nav{
 	display: none;
@@ -85,5 +91,59 @@ Header Styling
 *=========================*/
 header{
 	background-color: #000000;
-	height: 7vh;
+	min-height: 7vh;
+}
+
+/*============================
+
+Footer Styling
+
+*=========================*/
+
+footer{
+	background-color: #000000;
+}
+
+footer p{
+	font-family: 'Playfair Display', serif;
+	font-size: .8em;
+	text-transform: uppercase;
+	color: #cbbe9b;
+	padding: 3%;
+	width: 75%;
+	margin: 2% auto;
+	text-align: center;
+}
+
+/********************** START 500px MEDIA QUERY **************************/
+@media(min-width:500px) {
+
+	/*********************************NAVIGATION********************************/
+	.desktop-nav{
+		display: block;
+		display: flex;
+		justify-content: center;
+		background-color: #000000;
+		padding: .5%;
+		margin: 2% 0;
+	}
+
+	.hamburger,
+	.cross,
+	.menu {
+		display:none;
+	}
+
+	.desktop-nav ul li {
+		display: inline;
+	}
+
+	.desktop-nav a {
+		text-decoration: none;
+		color: #cbbe9b;
+		padding: 11px 15px;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		transition: .3s;
+	}
 }
