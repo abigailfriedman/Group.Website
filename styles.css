@@ -32,11 +32,6 @@ yellow color: #cbbe9b;
  	background-size: cover;
 }
 
-.Site {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
 
 .Site-content {
   flex: 1;
@@ -142,10 +137,36 @@ footer p{
 	font-size: .8em;
 	text-transform: uppercase;
 	color: #cbbe9b;
-	padding: 3%;
 	width: 75%;
 	margin: 2% auto;
 	text-align: center;
+}
+
+
+/*============================
+
+Tour Styling
+
+*=========================*/
+
+.tour-content{
+	max-width: 1000px;
+	margin: auto;
+}
+
+.production{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 2% 0;
+}
+
+.tour{
+	background-color: #000000c7;
+	color: #cbbe9b;
+	padding: 2%;
+	margin: 1.5% auto;
+	width: 60%;
 }
 
 /********************** START 500px MEDIA QUERY **************************/
