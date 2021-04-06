@@ -163,6 +163,7 @@ Tour Styling
 	flex-direction: column;
 	justify-content: space-evenly;
 	padding: 2% 0;
+	margin: 2%;
 }
 
 .tour{
@@ -170,7 +171,7 @@ Tour Styling
 	color: #cbbe9b;
 	padding: 2%;
 	margin: 3% auto;
-	width: 75%;
+	width: 70%;
 	height: 200px;
 	text-align: center;
 	display: flex;
@@ -192,6 +193,16 @@ Tour Styling
 	font-size: 1.3em;
 }
 
+.box{
+	transition: .5s;
+}
+
+.box:hover{
+	-moz-box-shadow: 0 0 15px #ccc;
+	-webkit-box-shadow: 0 0 15px #ccc;
+ 	box-shadow: 0 0 15px #ccc;
+	transition: .3s;
+}
 
 /*============================
 
@@ -269,7 +280,6 @@ Navigation  Styling
 
 	.tour{
 		width: 80%;
-
 	}
 
 }
