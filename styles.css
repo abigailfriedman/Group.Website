@@ -136,6 +136,28 @@ Tour Styling
 	margin: auto;
 }
 
+.tour-content a{
+	text-decoration: none;
+}
+
+.tour-header{
+	width: 60%;
+	text-align: center;
+	margin: 2% auto 0;
+}
+
+.tour-header H1{
+	font-family: 'Playfair Display', serif;
+	font-size: 1.7em;
+	text-transform: uppercase;
+}
+
+.tour-header p{
+	/*font-family: 'Playfair Display', serif;*/
+	text-transform: uppercase;
+	font-size: 1.1em;
+}
+
 .production{
 	display: flex;
 	flex-direction: column;
@@ -147,9 +169,29 @@ Tour Styling
 	background-color: #000000c7;
 	color: #cbbe9b;
 	padding: 2%;
-	margin: 1.5% auto;
+	margin: 3% auto;
 	width: 75%;
+	height: 200px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
+
+.tour h3,
+.tour p{
+	padding: 1%;
+}
+
+.tour h3{
+	font-size: 1.7em;
+	text-transform: uppercase;
+}
+
+.tour p{
+	font-size: 1.3em;
+}
+
 
 /*============================
 
@@ -173,10 +215,15 @@ footer p{
 
 
 
-/********************** START 500px MEDIA QUERY **************************/
+/********************** START 600px MEDIA QUERY **************************/
 @media(min-width:600px) {
 
-	/**************************NAVIGATION*****************************/
+/*============================
+
+Navigation  Styling
+
+*=========================*/
+
 	.desktop-nav{
 		display: block;
 		display: flex;
@@ -203,4 +250,26 @@ footer p{
 		text-transform: uppercase;
 		transition: .3s;
 	}
+
+	/*============================
+
+	Tour Styling
+
+	*=========================*/
+	.production{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.production a{
+		width: 48%;
+		padding: 1% .5% 1% 1%;
+	}
+
+	.tour{
+		width: 80%;
+
+	}
+
 }
