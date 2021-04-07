@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 		<!--FONTS-->
 		<link rel="stylesheet" href="https://use.typekit.net/wce7rwr.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,41 +20,128 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   </head>
+
+
   <body class="Site">
 
+   <header class="bio-header">
+			<div class="bloc-logo">
+				<canvas id="logo-canvas"></canvas>
+				<a href="index.html" class="logo-mask">Hamilton</a>
+			</div>
+
+			<button class="hamburger">&#9776;</button>
+			<button class="cross">&#735;</button>
+
+			<nav class="menu">
+				<ul>
+					<li><a href="characters.html">Characters</a></li>
+					<li><a href="tours.html">Productions</a></li>
+				</ul>
+			</nav>
+
+			<nav class="desktop-nav">
+				<ul>
+					<li><a href="characters.html">Characters</a></li>
+					<li><a href="tours.html">Productions</a></li>
+				</ul>
+			</nav>
+	</header>
+
       <!--Image Slider-->
-        <div class="content-slider">
+    <div class="content-slider">
 
       <!--Flip Animation-->
+
+			<!--Alexander Hamilton Card-->
           <div class="card-container">
-
             <div class="card">
-
               <div class="card-front">
-                  <img src="images/pic1.jpeg" alt="photo1">
+                  <img src="images/hamilton-actor.png" alt="Lin-Manuel Miranda as Hamilton" title="Lin-Manuel Miranda as Hamilton">
                   <h2 class="character-headline">Front Headline</h2>
                   <p>Hover to see the real Hamilton</p>
                   <p class="character-bio">Front Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
 
               <div class="card-back">
-                <img src="images/pic2.jpeg" alt="photo1">
+                <img src="images/hamilton-paint.png" alt="Alexander Hamilton" title="Alexander Hamilton">
                   <h2 class="character-headline">Back Headline</h2>
                   <p class="character-bio">Back Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
             </div>
           </div>
 
-          <div>
-          <img src="images/pic2.jpeg" alt="photo2">
-            <h2>Headline</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div>
-          <img src="images/pic3.jpeg" alt="photo3">
-            <h2>Headline</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-           </div>
+      <!--Aaron Burr Card-->
+					<div class="card-container">
+						<div class="card">
+							<div class="card-front">
+									<img src="images/burr-actor.png" alt="Leslie Odom Jr. as Aaron Burr" title="Leslie Odom Jr. as Aaron Burr">
+									<h2 class="character-headline">Aaron Burr on Broadway</h2>
+									<p>Hover to see the real Aaron Burr</p>
+									<p class="character-bio">Front Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+
+							<div class="card-back">
+								<img src="images/burr-paint.png" alt="Aaron Burr" title="Aaron Burr">
+									<h2 class="character-headline">Meet the Real Aaron Burr</h2>
+									<p class="character-bio">Back Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+
+       <!--Eliza Schuyler-->
+					<div class="card-container">
+						<div class="card">
+							<div class="card-front">
+									<img src="images/eliza-actor.png" alt="Phillipa Soo as Eliza Schuyler" title="Phillipa Soo as Eliza Schuyler">
+									<h2 class="character-headline">Eliza Schuyler on Broadway</h2>
+									<p>Hover to see the real Eliza Schuyler</p>
+									<p class="character-bio">Front Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+
+							<div class="card-back">
+								<img src="images/eliza-paint.png" alt="Eliza Schuyler" title="Eliza Schuyler">
+									<h2 class="character-headline">Meet the Real Eliza Schuyler</h2>
+									<p class="character-bio">Back Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+
+        <!--George Washington Card-->
+					<div class="card-container">
+						<div class="card">
+							<div class="card-front">
+									<img src="images/washington-actor.png" alt="Christopher Jackson as George Washington" title="Christopher Jackson as George Washington">
+									<h2 class="character-headline">George Washington on Broadway</h2>
+									<p>Hover to see the real George Washington</p>
+									<p class="character-bio">Front Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+
+							<div class="card-back">
+								<img src="images/washington-paint.png" alt="George Washington" title="George Washington">
+									<h2 class="character-headline">Meet the Real George Washington</h2>
+									<p class="character-bio">Back Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+
+        <!--Angelica Schuyler Card-->
+					<div class="card-container">
+						<div class="card">
+							<div class="card-front">
+									<img src="images/angelica-actor.png" alt="Renee Elise Goldsberry as Angelica Schuyler" title="Renee Elise Goldsberry as Angelica Schuyler">
+									<h2 class="character-headline">Angelica Schuyler on Broadway</h2>
+									<p>Hover to see the real Angelica Schuyler</p>
+									<p class="character-bio">Front Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+
+							<div class="card-back">
+								<img src="images/angelica-paint.png" alt="Angelica Schuyler" title="Angelica Schuyler">
+									<h2 class="character-headline">Meet the Real Angelica Schuyler</h2>
+									<p class="character-bio">Back Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
         </div>
 
 			  <footer>
@@ -60,6 +150,8 @@
 
 
 			  <script type="text/javascript" src="slick/slick.min.js"></script>
-			  <script type="text/javascript" src="main.js"></script>
+				<script src="js/granim.min.js"></script>
+				<script src="js/main.js"></script>
+				<script src="js/Hamburger.js"></script>
   </body>
 </html>
