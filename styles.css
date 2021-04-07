@@ -281,8 +281,8 @@ text-align: center;
 
 .character-bio {
 margin: 0 auto;
-text-align: center;
-max-width: 300px;
+width: 60%;
+max-width: 800px;
 height: 1000px;
 }
 
@@ -350,12 +350,20 @@ Navigation  Styling
 	*==========================*/
 
    .content-slider {
-		 width: 800px;
+		 width: 80%;
 	 }
 
    .card-container {
-		 width: 800px;
+		 width: 80%;
 	 }
 }
 
 /*===============END MINWIDTH QUERY======*/
+
+
+@media (min-width: 1300px) {
+	.content-slider {
+		font-size: 1.9rem;
+	}
+
+}
