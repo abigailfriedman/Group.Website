@@ -25,7 +25,7 @@ yellow color: #cbbe9b;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-	background-image: url("images/background.1.jpg");
+	background-image: url("images/hamilton-background.jpg");
 	height: 100%;
 	background-position: center;
  	background-repeat: no-repeat;
@@ -233,7 +233,8 @@ Character Bios Styling
 
 
 .content-slider {
-font-size: 1.4rem;
+	animation: fadein 1s ease;
+font-size: 1.2rem;
 width: 400px;
 margin: 0 auto;
 padding-top: 100px;
@@ -279,13 +280,41 @@ width: 200px;
 text-align: center;
 }
 
+.clickme {
+	font-weight: bold;
+}
+
+.hoverme {
+	display: none;
+}
 .character-bio {
 margin: 0 auto;
 width: 60%;
 max-width: 800px;
 height: 1000px;
+text-align: left;
 }
 
+
+/*==============================
+
+ANIMATIONS
+
+*==============================*/
+@keyframes fadein {
+	0% {
+		opacity: 0;
+		transform: scale(0.1);
+
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+
+	}
+
+}
 
 
 /********************** START 600px MEDIA QUERY **************************/
@@ -356,14 +385,33 @@ Navigation  Styling
    .card-container {
 		 width: 80%;
 	 }
+	 .character-bio {
+		 text-align: center;
+	 }
+	 .clickme {
+		 display: none;
+	 }
+
+	 .hoverme {
+		 display: block;
+		 font-weight: bold;
+	 }
 }
 
 /*===============END MINWIDTH QUERY======*/
 
-
+/********************** START 1300px MEDIA QUERY **************************/
 @media (min-width: 1300px) {
 	.content-slider {
 		font-size: 1.9rem;
 	}
 
+}
+
+/********************** START 420px MAXWiDTH MEDIA QUERY **************************/
+@media (max-width: 420px) {
+	.content-slider {
+		width: 100%;
+		max-width: 600px;
+	}
 }
