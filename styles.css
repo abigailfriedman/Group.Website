@@ -164,7 +164,7 @@ Tour Styling
 	justify-content: space-evenly;
 	padding: 2% 0;
 	margin: 2%;
-	animation: fadein 1s ease;
+	animation: fadein 2s ease;
 }
 
 .tour{
@@ -210,81 +210,99 @@ HOMEPAGE
 
 *==============================*/
 body {
-     cursor: default;
-     font-family: 'futura-pt';
-     background: url("images/hamilton-background.jpg") no-repeat 50% 50%;
-		 width: 100%;
-     height: 100%;
+  cursor: default;
+  font-family: 'futura-pt';
+  background: url("images/hamilton-background.jpg") no-repeat;
+	50% 50%;
+	width: 100%;
+  height: 100%;
 }
-.about{
+
+.container{
+	width: 100%;
+}
+
+.video-part{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	align-self: center;
+	width: 100%;
+	position: absolute;
+ 	top: 15%;
+	margin: auto;
+	align-items: center;
+	align-content: center;
+ 	/*transform: translate(0, -50%);*/
+}
+
+/*.content {
 	display:flex;
 	flex-wrap: wrap;
 	align-items: center;
 	align-self: center;
-}
-.content {
-     width: 100%;
-     margin: 0 auto;
-     z-index: -1;
-     position: absolute;
-     top: 60%;
-		 align-items: center;
-		 align-content: center;
-     transform: translate(0, -50%);
-		 margin-left: 20%;
-}
-.content img{
+  width: 100%;
+	margin: 0 auto;
+	z-index: -1;
+ 	position: absolute;
+  top: 45%;
+	align-items: center;
+	align-content: center;
+  transform: translate(0, -50%);
+}*/
+
+.video-part img{
 	width: 200px;
-	display: flex;
-	margin-left: 25%;
+	margin: auto;
 }
 
-.content p {
+.video-part p {
 	margin-left: 15%;
-	    margin-top: 0;
-	    color: #101010;
-	    font-weight: 400;
-	    font-size: 24px;
-	    margin-bottom: 10px;s
+	margin-top: 0;
+	color: #101010;
+	font-weight: 400;
+	font-size: 24px;
+	margin-bottom: 10px;
 }
+
 .video{
 	margin-left: 13%;
 }
 
-.overlay-2 {
-     z-index: 0;
-     position: absolute;
-     width: 100%;
-     height: 100vh;
-     background:url("images/hamilton-background.jpg");
-}
+/*.overlay-2 {
+  z-index: 0;
+	position: absolute;
+  width: 100%;
+	height: 100vh;
+  background:url("images/hamilton-background.jpg");
+}*/
 
 .overlay {
-     z-index: 1;
-     position: absolute;
-     width: 100%;
-     height: 100vh;
-     background:url("images/hamilton-background.jpg");
+   z-index: 1;
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   background:url("images/hamilton-background.jpg");
 }
 
-.overlay p {
-     font-size: 250px;
-     font-weight: 500;
+.overlay h1{
+   font-size: 3.8em;
 }
 
 .screen {
-     color: #323232;
-     font-family: 'Playfair Display';
-     position: absolute;
-     top: 30%;
-     left: 50%;
-     transform: translate(-50%, -50%);
+  color: #323232;
+	font-family: 'Playfair Display';
+	position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .myBtn {
      font-family: 'futura-pt';
      position: absolute;
-     top: 50%;
+     top: 40%;
      left: 50%;
      transform: translate(-50%, -50%);
 }
@@ -303,13 +321,13 @@ button {
      overflow: hidden;
      background: none;
      z-index: 1;
-     cursor: crosshair;
+     cursor: default;
      transition: 0.8s ease-out;
 }
 
 .myBtn:hover {
      color: #101010;
-     cursor: crosshair;
+     cursor: default;
 }
 
 .myBtn:before {
@@ -363,7 +381,7 @@ Character Bios Styling
 	text-align: center;
 }
 .content-slider {
-	animation: fadein 1s ease;
+animation: fadein 1s ease;
 font-size: 1.2rem;
 width: 400px;
 margin: 0 auto;
@@ -450,10 +468,9 @@ ANIMATIONS
 
 /********************** START 600px MEDIA QUERY **************************/
 @media(min-width:600px) {
-	.overlay p {
-			 font-size: 150px;
-			 font-weight: 250;
-	}
+	.overlay h1 {
+		   font-size: 6em;
+		}
 
 /*============================
 
@@ -485,7 +502,7 @@ Navigation  Styling
 		padding: 11px 15px;
 		font-size: 1.2em;
 		text-transform: uppercase;
-		transition: .3s;
+		transition: 0.8s ease-out;
 	}
 
 	.button:hover{
