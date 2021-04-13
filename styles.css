@@ -203,7 +203,129 @@ Tour Styling
  	box-shadow: 0 0 15px #ccc;
 	transition: .3s;
 }
+/*==============================
 
+HOMEPAGE
+
+*==============================*/
+body {
+     cursor: default;
+     font-family: 'futura-pt';
+     background: url("images/hamilton-background.jpg") no-repeat 50% 50%;
+		 width: 100%;
+     height: 100%;
+}
+.about{
+	display:flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-self: center;
+}
+.content {
+     width: 100%;
+     margin: 0 auto;
+     z-index: -1;
+     position: absolute;
+     top: 60%;
+		 align-items: center;
+		 align-content: center;
+     transform: translate(0, -50%);
+		 margin-left: 20%;
+}
+.content img{
+	width: 200px;
+	display: flex;
+	margin-left: 25%;
+}
+
+.content p {
+	margin-left: 15%;
+	    margin-top: 0;
+	    color: #101010;
+	    font-weight: 400;
+	    font-size: 24px;
+	    margin-bottom: 10px;s
+}
+.video{
+	margin-left: 13%;
+}
+
+.overlay-2 {
+     z-index: 0;
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     background:url("images/hamilton-background.jpg");
+}
+
+.overlay {
+     z-index: 1;
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     background:url("images/hamilton-background.jpg");
+}
+
+.overlay p {
+     font-size: 250px;
+     font-weight: 500;
+}
+
+.screen {
+     color: #323232;
+     font-family: 'Playfair Display';
+     position: absolute;
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+.myBtn {
+     font-family: 'futura-pt';
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+button {
+     display: block;
+     padding: 24px 48px;
+     font-family: 'futura-pt';
+     font-weight: 700;
+     font-size: 12px;
+     letter-spacing: 6px;
+     color: #fff;
+     border: 2px solid #fff;
+     text-transform: uppercase;
+     outline: none;
+     overflow: hidden;
+     background: none;
+     z-index: 1;
+     cursor: crosshair;
+     transition: 0.8s ease-out;
+}
+
+.myBtn:hover {
+     color: #101010;
+     cursor: crosshair;
+}
+
+.myBtn:before {
+     content: "";
+     position: absolute;
+     background: #fff;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     top: 100%;
+     z-index: -1;
+     transition: top 0.8s ease-out;
+}
+
+.myBtn:hover:before {
+     top: 0;
+}
 /*============================
 
 Footer Styling
@@ -313,6 +435,7 @@ ANIMATIONS
 		opacity: 0;
 		transform: scale(0.1);
 
+
 	}
 
 	100% {
@@ -326,6 +449,10 @@ ANIMATIONS
 
 /********************** START 600px MEDIA QUERY **************************/
 @media(min-width:600px) {
+	.overlay p {
+			 font-size: 150px;
+			 font-weight: 250;
+	}
 
 /*============================
 
@@ -412,7 +539,10 @@ Navigation  Styling
 	.content-slider {
 		font-size: 1.9rem;
 	}
-
+	.overlay p {
+	     font-size: 200px;
+	     font-weight: 350;
+	}
 }
 
 /********************** START 420px MAXWiDTH MEDIA QUERY **************************/
@@ -420,5 +550,12 @@ Navigation  Styling
 	.content-slider {
 		width: 100%;
 		max-width: 600px;
+	}
+
+}
+@media (max-width: 600px){
+	.overlay p {
+			 font-size: 100px;
+			 font-weight: 200;
 	}
 }

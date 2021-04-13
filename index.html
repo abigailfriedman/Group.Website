@@ -10,7 +10,6 @@
 		<link type="text/css" rel="stylesheet" href="styles.css" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
 		<!--FONTS-->
 		<link rel="stylesheet" href="https://use.typekit.net/wce7rwr.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,6 +19,10 @@
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+		<link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
+
 	</head>
 
 
@@ -42,13 +45,32 @@
 
 			<nav class="desktop-nav">
 				<ul>
-					<li><a href="characters.html">Characters</a></li>
+					<li><a href="characterbio.html">Characters</a></li>
 					<li><a href="tours.html">Productions</a></li>
 				</ul>
 			</nav>
 		</header>
+		<body>
+	    <div class="container">
 
-		<main class="Site-content">
+	        <div class="overlay">
+	            <p class="screen">HAMILTON</p>
+	            <div class="intro">
+	                    <button class="myBtn" onclick="fadeOut()">"Whats your name man?</button>
+	            </div>
+	        </div>
+
+	        <div class="overlay-2"></div>
+					<section class="about">
+						<div class="content">
+							<img src="images/logo.png" alt="logo">
+						<p class="data">"There's a million things we haven't done, just you wait"</p>
+							<div class="video">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/E8_ARd4oKiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+
+			</div>
 
 		</main>
 		<footer>
