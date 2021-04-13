@@ -461,7 +461,9 @@ ANIMATIONS
 		 padding-bottom: 4%;
 		}
 
-
+		.home-buttons a{
+			margin: 3% auto;
+		}
 /*============================
 
 Navigation  Styling
