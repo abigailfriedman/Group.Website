@@ -164,6 +164,7 @@ Tour Styling
 	justify-content: space-evenly;
 	padding: 2% 0;
 	margin: 2%;
+	animation: fadein 1s ease;
 }
 
 .tour{
