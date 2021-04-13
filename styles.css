@@ -243,6 +243,10 @@ body {
 	text-align: center;
 }
 
+#wait{
+	transition: .5s;
+}
+
 #wait:hover{
 	color: #827a18;
 	transition: .5s;
