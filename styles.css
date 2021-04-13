@@ -221,46 +221,31 @@ body {
 	width: 100%;
 }
 
-.video-part{
-	display:flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
-	align-self: center;
-	width: 100%;
-	position: absolute;
- 	top: 15%;
-	margin: auto;
+.home{
+	width: 60%;
+	margin: 0 auto 3%;
 	align-items: center;
 	align-content: center;
 
 }
 
-.video-part img{
-	width: 200px;
-	margin: auto;
+.home img{
+	width: 100%;
+	margin: 2% auto;
 }
 
-.video-part p {
-	margin-left: 15%;
-	margin-top: 0;
+.home p {
+	margin: 3% auto 0;
 	color: #101010;
 	font-weight: 400;
-	font-size: 24px;
-	margin-bottom: 10px;
+	font-size: 2.4em;
+	text-align: center;
 }
 
-.video{
-	margin-left: 13%;
+#wait:hover{
+	color: #827a18;
+	transition: .5s;
 }
-
-/*.overlay-2 {
-  z-index: 0;
-	position: absolute;
-  width: 100%;
-	height: 100vh;
-  background:url("images/hamilton-background.jpg");
-}*/
 
 .overlay {
    z-index: 1;
@@ -285,29 +270,29 @@ body {
 }
 
 .myBtn {
-     font-family: 'futura-pt';
-     position: absolute;
-     top: 40%;
-     left: 50%;
-     transform: translate(-50%, -50%);
+	font-family: 'futura-pt';
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 button {
-     display: block;
-     padding: 24px 48px;
-     font-family: 'futura-pt';
-     font-weight: 700;
-     font-size: 12px;
-     letter-spacing: 6px;
-     color: #fff;
-     border: 2px solid #fff;
-     text-transform: uppercase;
-     outline: none;
-     overflow: hidden;
-     background: none;
-     z-index: 1;
-     cursor: default;
-     transition: 0.8s ease-out;
+  display: block;
+  padding: 24px 48px;
+  font-family: 'futura-pt';
+ 	font-weight: 700;
+  font-size: 12px;
+ 	letter-spacing: 6px;
+	color: #fff;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  outline: none;
+ 	overflow: hidden;
+  background: none;
+	z-index: 1;
+  cursor: default;
+  transition: 0.8s ease-out;
 }
 
 .myBtn:hover {
@@ -526,6 +511,7 @@ Navigation  Styling
 
    .content-slider {
 		 width: 80%;
+		 font-size: 1.4rem;
 	 }
 
    .card-container {
