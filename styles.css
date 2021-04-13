@@ -263,7 +263,7 @@ body {
 .myBtn {
 	font-family: 'futura-pt';
   position: absolute;
-  top: 40%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -285,6 +285,7 @@ button {
   cursor: default;
   transition: 0.8s ease-out;
 }
+
 
 .myBtn:hover {
   color: #101010;
@@ -396,6 +397,7 @@ position: absolute;
 width: 100%;
 height: 100%;
 backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
 }
 
 .card-container:hover .card {
