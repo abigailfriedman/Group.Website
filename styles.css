@@ -466,7 +466,7 @@ Navigation  Styling
 		display: flex;
 		justify-content: flex-end;
 		background-color: #000000;
-		margin: 2% 0;
+		margin: 2% 1%;
 	}
 
 	.hamburger,
@@ -486,6 +486,25 @@ Navigation  Styling
 		font-size: 1.2em;
 		text-transform: uppercase;
 		transition: .3s;
+	}
+
+	.button:hover{
+	  background: #cbbe9b;
+		color: black;
+	  box-shadow: 0 0 3px rgba(black, .5) inset;
+	  }
+	}
+
+	.button-hover{
+
+	  &:hover{ line-height: 4em; }
+
+	  &:before{
+	    content: attr(data-text);
+	    color: #DEEFF5;
+	    position: absolute;
+	    top: -2.25em;
+	  }
 	}
 
 	/*============================
